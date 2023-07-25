@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoGrafico from './components/img/infografico.png';
+import InfoGrafico from '/img/infografico.png';
 import Video from 'https://youtu.be/MJk7wr8XUT8';
 import Audio from '';
 
@@ -8,7 +8,7 @@ function App() {
     <div className="bg-[#253140] text-white p-6">
       <div id="infografico" className="flex justify-center flex-col items-center">
         <h1 className="font-bold text-center text-3xl mb-5 max-md:text-xl">INFOGRAFICO</h1>
-        <img src="/img/infografico.png" className="w-[900px]  h-full" alt="InfoGrafico" title="InfoGrafico"/>
+        <img src={InfoGrafico} className="w-[900px]  h-full" alt="InfoGrafico" title="InfoGrafico"/>
         <hr className=""/>
       </div>
       <div id="minivideo" className=" "></div>
