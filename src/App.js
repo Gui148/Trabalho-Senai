@@ -11,7 +11,7 @@ function App() {
         <img src={InfoGrafico} className="w-[900px] h-full" alt="InfoGrafico" title="InfoGrafico"/>
         <hr className=""/>
       </div>
-      <div id="minivideo" className=""></div>
+      <div id="minivideo" className=" "></div>
       <div className="mt-28">
         <h1 className="text-center text-3xl font-bold mb-10 ">Video</h1>
         <div className="flex gap-10 mt-5 max-lg:flex-col max-lg:items-center">
