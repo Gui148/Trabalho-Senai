@@ -1,6 +1,5 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-import Video from './img/tente.mp4';
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       </div>
       <div id="minivideo" className="flex justify-center flex-col items-center">
         <h2 className="font-bold text-center text-3xl mb-5 mt-5 max-md:text-xl">VIDEO</h2>
-        <video src={Video} width={720} height={1280} controls >
+        <video src={{}} width={720} height={1280} controls >
         </video>
       </div>
       <div id="podcast" className="">
