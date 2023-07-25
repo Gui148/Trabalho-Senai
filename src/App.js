@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import InfoGrafico from './img/infografico.png';
+import Video from './img/videoplayback.mp4';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-[#253140] text-white p-6">
+      <div id="infografico" className="flex justify-center flex-col items-center">
+        <h1 className="font-bold text-center text-3xl mb-5">INFOGRAFICO</h1>
+        <img src={InfoGrafico} className="w-[900px] h-full" alt="InfoGrafico" title="InfoGrafico"/>
+        <hr className=""/>
+      </div>
+      <div id="minivideo" className="">
+        <h2 className="font-bold text-center text-3xl mb-5 mt-5">VIDEO</h2>
+        <video src={Video} width={1280} height={720} controls>
+        </video>
+      </div>
     </div>
   );
 }
