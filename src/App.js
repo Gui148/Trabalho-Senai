@@ -1,10 +1,6 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-<<<<<<< HEAD
-import Video from './img/videoplayback.mp4;
-=======
-import Video from './img/tente.mp4';
->>>>>>> 7b530c81f3a588d2065a1e3be1821ac8f1173c4f
+import Video from './img/videoplayback.mp4';
 import Audio from './img/audio.mp3';
 
 function App() {
@@ -14,7 +10,6 @@ function App() {
         <h1 className="font-bold text-center text-3xl mb-5 max-md:text-xl">INFOGRAFICO</h1>
         <img src={InfoGrafico} className="w-[900px]  h-full" alt="InfoGrafico" title="InfoGrafico"/>
         <hr className=""/>
-        <img src={InfoGrafico} className="w-[550px]" alt="InfoGrafico"/>
       </div>
       <div id="minivideo" className=" "></div>
       <div className="mt-28">
