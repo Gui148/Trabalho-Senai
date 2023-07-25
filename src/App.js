@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoGrafico from '/img/infografico.png';
+import InfoGrafico from '.components/img/infografico.png';
 import Video from 'https://youtu.be/MJk7wr8XUT8';
 import Audio from '';
 
