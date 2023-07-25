@@ -3,6 +3,9 @@ import React from 'react';
 function Header() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7b530c81f3a588d2065a1e3be1821ac8f1173c4f
     <div className="flex justify-between bg-gray-800 text-white w-full h-14 items-center p-6 fixed z-50">
       <a className="text-2xl max-md:text-lg font-bold">TRABALHO</a>
 =======
