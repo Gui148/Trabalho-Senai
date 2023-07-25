@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-import Video from './img/tente.mp4';
+import Video from './img/videoplayback.mp4;
 import Audio from './img/audio.mp3';
 
 function App() {
