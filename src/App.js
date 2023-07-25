@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-import Video from './img/videoplayback.mp4';
+import Video from './img/tente.mp4';
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
         <img src={InfoGrafico} className="w-[900px] h-full" alt="InfoGrafico" title="InfoGrafico"/>
         <hr className=""/>
       </div>
-      <div id="minivideo" className="">
+      <div id="minivideo" className="flex justify-center flex-col items-center">
         <h2 className="font-bold text-center text-3xl mb-5 mt-5 max-md:text-xl">VIDEO</h2>
-        <video src={Video} width={1280} height={720} controls>
+        <video src={Video} width={720} height={1280} controls >
         </video>
       </div>
       <div id="podcast" className="">
