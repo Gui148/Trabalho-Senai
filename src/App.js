@@ -23,8 +23,7 @@ function App() {
 
           Assista a este vídeo e descubra como desenvolver essas habilidades essenciais para o crescimento profissional. Você aprenderá a dominar o nervosismo e aprimorar sua comunicação não verbal, elevando sua confiança e impacto em qualquer contexto de trabalho. Venha conosco nessa jornada rumo ao sucesso no mundo profissional!
           </p>
-          <video src={Video} width={720} height={1280} controls >
-          </video>
+          <iframe width="1920" height="1080" src="https://www.youtube.com/embed/anCKT5W9SgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div id="podcast" className=""></div>
