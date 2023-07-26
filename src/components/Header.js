@@ -9,6 +9,7 @@ function Header() {
         <a href="#infografico" className="hover:text-gray-400">InfoGrafico</a>
         <a href="#minivideo" className="hover:text-gray-400">Video</a>
         <a href="#podcast" className="hover:text-gray-400">PodCast</a>
+        <a href="#podcast" className="hover:text-gray-400">Soft Skills</a>
       </div>
     </div>
   );
