@@ -1,21 +1,23 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-import Video from './img/trabalho.mp4';
 import Audio from './img/audio.mp3';
+import Soft_1 from "./img/softSkills/soft-1.png";
+import Soft_2 from "./img/softSkills/soft-2.jpg";
+import Soft_3 from "./img/softSkills/soft-3.webp";
 
 function App() {
   return (
-    <div className="bg-[#253140] text-white p-6">
+    <div className="bg-[#253140] text-white p-6 box-border w-full">
       <div id="infografico" className="flex justify-center flex-col items-center">
         <h1 className="font-bold text-center text-3xl mb-5 max-md:text-xl">INFOGRAFICO</h1>
         <img src={InfoGrafico} className="w-[900px]  h-full" alt="InfoGrafico" title="InfoGrafico"/>
         <hr className=""/>
       </div>
       <div id="minivideo" className=" "></div>
-      <div className="mt-28">
+      <div className="mt-28 p-7">
         <h1 className="text-center text-3xl font-bold mb-10 ">Video</h1>
         <div className="flex gap-10 mt-5 max-lg:flex-col max-lg:items-center">
-          <p className="text-left text-sm max-md:text-xs">Nervosismo é algo comum a todos nós, principalmente em situações importantes, como entrevistas de emprego, apresentações e reuniões cruciais. No entanto, é essencial aprender a controlar essa ansiedade para transmitir confiança e segurança aos outros. Neste vídeo, compartilharemos técnicas práticas e eficazes para lidar com o nervosismo, desde exercícios de respiração até dicas para se preparar adequadamente e enfrentar o momento com tranquilidade.<br/>
+          <p className="text-left text-sm max-md:text-xs max-xl:w-1/3 lg:w-1/3">Nervosismo é algo comum a todos nós, principalmente em situações importantes, como entrevistas de emprego, apresentações e reuniões cruciais. No entanto, é essencial aprender a controlar essa ansiedade para transmitir confiança e segurança aos outros. Neste vídeo, compartilharemos técnicas práticas e eficazes para lidar com o nervosismo, desde exercícios de respiração até dicas para se preparar adequadamente e enfrentar o momento com tranquilidade.<br/>
             <br/>
 
           Além disso, abordaremos a importância da linguagem verbal e não verbal no ambiente de trabalho. A comunicação vai muito além das palavras que pronunciamos. Expressões faciais, postura, gestos e até mesmo o tom de voz têm um impacto significativo na forma como somos percebidos pelos colegas e superiores. Compreender como utilizar a linguagem corporal de forma positiva e alinhá-la à mensagem verbal pode fazer toda a diferença em nossas interações profissionais, contribuindo para construir relações mais harmoniosas e produtivas no ambiente de trabalho. <br/>
@@ -23,15 +25,14 @@ function App() {
 
           Assista a este vídeo e descubra como desenvolver essas habilidades essenciais para o crescimento profissional. Você aprenderá a dominar o nervosismo e aprimorar sua comunicação não verbal, elevando sua confiança e impacto em qualquer contexto de trabalho. Venha conosco nessa jornada rumo ao sucesso no mundo profissional!
           </p>
-          <video src={Video} width={720} height={1280} controls >
-          </video>
+            <iframe className='max-md:w-full' width="700" height="450" src="https://www.youtube.com/embed/anCKT5W9SgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div id="podcast" className=""></div>
       <div className="mt-28">
         <h1 className="text-center text-3xl font-bold">PodCast</h1>
         <div  className="flex gap-10 justify-center items-center mt-10 max-lg:flex-col ">
-          <audio src={Audio} controls  className="max-lg:w-2/4 w-2/6">
+          <audio src={Audio} controls  className="max-lg:w-2/4 w-2/6 max-md:w-3/4">
           </audio>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className="flex max-w-2xl max-lg:max-w-xl">
@@ -54,6 +55,15 @@ function App() {
             <br/>
             Prepare-se para brilhar no palco da vida!
           </a>
+        </div>
+      </div>
+      <div id='softskills' ></div>
+      <div className='mt-14 '>
+        <h1 className="text-center text-3xl font-bold mb-10">Soft Skills</h1>
+        <div className='space-y-5 flex flex-col justify-center items-center'>
+          <img src={Soft_1} className='w-2/4'/>
+            <img src={Soft_2} className='w-2/4' />
+          <img src={Soft_3} className='w-2/4'/>
         </div>
       </div>
     </div>
