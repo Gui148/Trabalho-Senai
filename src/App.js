@@ -33,7 +33,7 @@ function App() {
         <div  className="flex gap-10 justify-center items-center mt-10 max-lg:flex-col ">
           <audio src={Audio} controls  className="max-lg:w-2/4 w-2/6">
           </audio>
-          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className="flex max-w-2xl max-lg:max-w-xl">
             Bem-vindos ao podcast Desafio no Palco! Se você já sentiu o coração acelerar antes de subir ao palco ou enfrentar uma plateia, este é o lugar certo para você.
             <br/>
