@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoGrafico from './img/infografico.png';
-import Video from './img/video.mp4';
+import Video from './img/trabalho.mp4';
 import Audio from './img/audio.mp3';
 
 function App() {
@@ -23,7 +23,8 @@ function App() {
 
           Assista a este vídeo e descubra como desenvolver essas habilidades essenciais para o crescimento profissional. Você aprenderá a dominar o nervosismo e aprimorar sua comunicação não verbal, elevando sua confiança e impacto em qualquer contexto de trabalho. Venha conosco nessa jornada rumo ao sucesso no mundo profissional!
           </p>
-          <iframe width="1920" height="1080" src="https://www.youtube.com/embed/anCKT5W9SgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <video src={Video} width={720} height={1280} controls >
+          </video>
         </div>
       </div>
       <div id="podcast" className=""></div>
