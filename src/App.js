@@ -61,9 +61,9 @@ function App() {
       <div className='mt-14 '>
         <h1 className="text-center text-3xl font-bold mb-10">Soft Skills</h1>
         <div className='space-y-5 flex flex-col justify-center items-center'>
-          <img src={Soft_1} className='w-2/4'/>
-            <img src={Soft_2} className='w-2/4' />
-          <img src={Soft_3} className='w-2/4'/>
+          <img src={Soft_1} className='w-2/4 max-lg:w-3/4'/>
+            <img src={Soft_2} className='w-2/4 max-lg:w-3/4' />
+          <img src={Soft_3} className='w-2/4 max-lg:w-3/4'/>
         </div>
       </div>
     </div>
