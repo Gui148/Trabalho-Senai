@@ -1,11 +1,26 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import InfoGrafico from './img/infografico.png';
 import Audio from './img/audio.mp3';
 import Soft_1 from "./img/softSkills/soft-1.png";
 import Soft_2 from "./img/softSkills/soft-2.jpg";
 import Soft_3 from "./img/softSkills/soft-3.webp";
+import Rennan from "./img/rennan.webp"
 
 function App() {
+  const [avaliacaoFeita, setAvaliacaoFeita] = useState(false);
+
+  function Clique(event) {
+    const buttonAlert = event.target.textContent;
+    if (buttonAlert === "Claro" || buttonAlert === "Sim") {
+      setAvaliacaoFeita(true);
+      setTimeout(() => {
+        setAvaliacaoFeita(false);
+      }, 3000)
+    }
+
+    }
+
   return (
     <div className="bg-[#253140] text-white p-6 box-border w-full">
       <div id="infografico" className="flex justify-center flex-col items-center">
@@ -64,6 +79,18 @@ function App() {
           <img src={Soft_1} className='w-2/4 max-lg:w-3/4'/>
             <img src={Soft_2} className='w-2/4 max-lg:w-3/4' />
           <img src={Soft_3} className='w-2/4 max-lg:w-3/4'/>
+        </div>
+      </div>
+      <div className='flex items-end max-lg:flex-col max-lg:items-center'>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <img src={Rennan} className='max-lg:w-full w-1/4'/>
+        <div className='space-x-4 mb-6 max-lg:mt-8 buttons'>
+          <button onClick={Clique} className='bg-transparent hover:bg-[#30D6FF] text-white font-semibold py-2 px-4 border
+          border-[#30D6FF] hover:border-transparent rounded w-24'>Sim</button>
+          <a>ou</a>
+          <button onClick={Clique} className='bg-transparent hover:bg-[#30D6FF] text-white font-semibold py-2 px-4 border
+          border-[#30D6FF] hover:border-transparent rounded w-24'>Claro</button>
+        {avaliacaoFeita && (<div className="mt-8 text-center text-xl font-bold">Obrigado pela avaliação!</div>)}
         </div>
       </div>
     </div>
